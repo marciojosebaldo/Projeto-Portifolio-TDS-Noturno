@@ -1,0 +1,10 @@
+:root {
+    --body-bg-color: #22212C; /**/
+    --text-color: #837E9F; 
+    --bg-cards: #302F3D; /*Cor dos cartões*/
+    --bg-techs: #CB92B1; /*Tecnologias na parte inferior esquerdo*/
+  }
+
+  body {
+    background-color: var(--body-bg-color); /*Invocação da variável*/
+  }
