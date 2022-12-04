@@ -5,7 +5,36 @@
     --bg-techs: #CB92B1; /*Tecnologias na parte inferior esquerdo*/
   }
 
-  body {
+  html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
     font-family: 'Merriweather Sans', sans-serif;
     background-color: var(--body-bg-color); /*Invocação da variável*/
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  header {
+    background-color: yellow;
+    height: 100px;
+  }
+
+  main {
+    background-color: red;
+    height: 100px;
+  }
+
+  aside {
+    background-color: aqua;
+    height: 100px;
+  }
+
+  footer {
+    background-color: white;
+    height: 100px;
   }
