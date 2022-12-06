@@ -1,45 +1,145 @@
 :root {
-    --body-bg-color: #22212C; /**/
-    --text-color: #837E9F; 
-    --bg-cards: #302F3D; /*Cor dos cartões*/
-    --bg-techs: #CB92B1; /*Tecnologias na parte inferior esquerdo*/
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
   }
 
-  html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  body {
     font-family: 'Merriweather Sans', sans-serif;
-    background-color: var(--body-bg-color); /*Invocação da variável*/
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 20vh 70vh 10vh;
-
-    grid-template-areas: "h h"
-                          "a m"
-                          "f f"
-  }
-
-  header {
-    background-color: yellow;
-    grid-area: h;
-  }
-
-  main {
-    background-color: red;
-    grid-area: m;
+    /*background-color: var(--body-bg-color);*/
+    
+    box-sizing: border-box;
   }
 
   aside {
-    background-color: aqua;
-    grid-area: a;
+    margin: 2% 2%;
+    padding-bottom: 10%;
+
+    box-sizing: border-box;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 1fr 30% 1fr 1fr;
+    grid-template-areas: "profile"
+                         "links"
+                         "tecnologias"
+                         "experiencias"
+                         "educacao";
+    gap: 2%;
+
+                        }
+
+  .profile {
+    width: 348px;
+    height: 292px;
+
+    border: solid 2px red;
+    border-radius: 20px;
+
+    grid-area: profile;
   }
 
-  footer {
-    background-color: white;
-    grid-area: f;
+  .links{
+    width: 348px;
+    height: 348px;
+
+    border: solid 2px red;
+    border-radius: 20px;
+
+    grid-area: links;
+  }
+
+  .tecnologias {
+    width: 348px;
+    height: 208px;
+
+    border: solid 2px red;
+    border-radius: 20px;
+
+    grid-area: tecnologias;
+  }
+
+  .experiencias {
+    width: 348px;
+    height: 349px;
+
+    border: solid 2px red;
+    border-radius: 20px;
+
+    grid-area: experiencias;
+  }
+
+  .educacao {
+    width: 348px;
+    height: 349px;
+
+    border: solid 2px red;
+    border-radius: 20px;
+
+    grid-area: educacao;
+  }
+
+  main {
+    box-sizing: border-box;
+
+    display: flex;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr;
+    grid-template-areas: "meusProjetos meusProjetos"
+                        "projeto1 projeto2"
+                         "tituloPostRecente tituloPostRecente"
+                         "post post";
+  }
+
+  .meusProjetos {
+    width: 348px;
+    height: 349px;
+
+    border: solid 2px red;
+    border-radius: 20px;
+
+    grid-area: meusProjetos;
+  }
+
+  .projeto1 {
+    width: 348px;
+    height: 349px;
+
+    border: solid 2px red;
+    border-radius: 20px;
+
+    grid-area: projeto1;
+  }
+
+  .projeto2 {
+    width: 348px;
+    height: 349px;
+
+    border: solid 2px red;
+    border-radius: 20px;
+
+    grid-area: projeto2;
+  }
+
+  .tituloPostRecente {
+    width: 348px;
+    height: 349px;
+    
+    border: solid 2px red;
+    border-radius: 20px;
+
+    grid-area: tituloPostRecente;
+  }
+
+  .post {
+    width: 348px;
+    height: 349px;
+
+    border: solid 2px red;
+    border-radius: 20px;
+
+    grid-area: post;
   }
