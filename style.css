@@ -12,7 +12,7 @@
     box-sizing: border-box;
   }
 
-  #container {
+  .container {
     box-sizing: border-box;
     display: flex;
   }
@@ -34,7 +34,7 @@
                          "educacao";
     gap: 2%;
 
-                        }
+                        } 
 
   .profile {
     width: 348px;
@@ -97,9 +97,11 @@
                         "projeto1 projeto2"
                          "tituloPostRecente tituloPostRecente"
                          "post post";
-  }
+                        }
 
   .meusProjetos {
+    margin-bottom: 3%;
+    
     width: 952px;
     height: 86px;
 
@@ -109,9 +111,17 @@
     grid-area: meusProjetos;
   }
 
-  #projetosFlex {
-    display: flex;
+  .projetosFlex {
+    box-sizing: border-box;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "projeto1 projeto2";
 
+    gap: 3%;
+    margin-bottom: 3%;
   }
 
   .projeto1 {
@@ -142,6 +152,8 @@
     border-radius: 20px;
 
     grid-area: tituloPostRecente;
+
+    margin-bottom: 3%;
   }
 
   .post {
