@@ -12,6 +12,11 @@
     box-sizing: border-box;
   }
 
+  #container {
+    box-sizing: border-box;
+    display: flex;
+  }
+
   aside {
     margin: 2% 2%;
     padding-bottom: 10%;
@@ -84,7 +89,7 @@
   main {
     box-sizing: border-box;
 
-    display: flex;
+    margin: 2% 2%;
 
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 4fr;
@@ -95,8 +100,8 @@
   }
 
   .meusProjetos {
-    width: 348px;
-    height: 349px;
+    width: 952px;
+    height: 86px;
 
     border: solid 2px red;
     border-radius: 20px;
@@ -104,9 +109,14 @@
     grid-area: meusProjetos;
   }
 
+  #projetosFlex {
+    display: flex;
+
+  }
+
   .projeto1 {
-    width: 348px;
-    height: 349px;
+    width: 461px;
+    height: 186px;
 
     border: solid 2px red;
     border-radius: 20px;
@@ -115,8 +125,8 @@
   }
 
   .projeto2 {
-    width: 348px;
-    height: 349px;
+    width: 461px;
+    height: 186px;
 
     border: solid 2px red;
     border-radius: 20px;
@@ -125,8 +135,8 @@
   }
 
   .tituloPostRecente {
-    width: 348px;
-    height: 349px;
+    width: 952px;
+    height: 86px;
     
     border: solid 2px red;
     border-radius: 20px;
@@ -135,8 +145,8 @@
   }
 
   .post {
-    width: 348px;
-    height: 349px;
+    width: 952px;
+    height: 201px;
 
     border: solid 2px red;
     border-radius: 20px;
