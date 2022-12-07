@@ -7,7 +7,9 @@
 
   body {
     font-family: 'Merriweather Sans', sans-serif;
-    /*background-color: var(--body-bg-color);*/
+
+    color: var(--text-color);
+    background-color: var(--body-bg-color);
     
     box-sizing: border-box;
   }
@@ -18,8 +20,8 @@
   }
 
   aside {
-    margin: 2% 2%;
-    padding-bottom: 10%;
+    margin: 2%;
+    margin-bottom: 11%;
 
     box-sizing: border-box;
 
@@ -40,56 +42,65 @@
     width: 348px;
     height: 292px;
 
-    border: solid 2px red;
     border-radius: 20px;
 
     grid-area: profile;
+
+    background-color: var(--bg-cards);
+  }
+
+  .profile h2 {
+    text-align: center;
   }
 
   .links{
     width: 348px;
     height: 348px;
 
-    border: solid 2px red;
     border-radius: 20px;
 
     grid-area: links;
+
+    background-color: var(--bg-cards);
   }
 
   .tecnologias {
     width: 348px;
     height: 208px;
 
-    border: solid 2px red;
     border-radius: 20px;
 
     grid-area: tecnologias;
+
+    background-color: var(--bg-cards);
   }
 
   .experiencias {
     width: 348px;
     height: 349px;
 
-    border: solid 2px red;
     border-radius: 20px;
 
     grid-area: experiencias;
+
+    background-color: var(--bg-cards);
   }
 
   .educacao {
     width: 348px;
     height: 349px;
 
-    border: solid 2px red;
     border-radius: 20px;
 
     grid-area: educacao;
+
+    background-color: var(--bg-cards);
   }
 
   main {
+    margin: 0.7%;
+    
     box-sizing: border-box;
-
-    margin: 2% 2%;
 
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 4fr;
@@ -97,18 +108,26 @@
                         "projeto1 projeto2"
                          "tituloPostRecente tituloPostRecente"
                          "post post";
-                        }
+                        
+    }
 
   .meusProjetos {
+    margin-top: 2%;
     margin-bottom: 3%;
     
-    width: 952px;
+    width: 860px;
     height: 86px;
 
-    border: solid 2px red;
     border-radius: 20px;
 
     grid-area: meusProjetos;
+
+    background-color: var(--bg-cards);
+  }
+
+  .meusProjetos h2 {
+    margin: 0px;
+    padding: 4.4vh
   }
 
   .projetosFlex {
@@ -125,43 +144,54 @@
   }
 
   .projeto1 {
-    width: 461px;
+    width: auto;
     height: 186px;
 
-    border: solid 2px red;
     border-radius: 20px;
 
     grid-area: projeto1;
+
+    background-color: var(--bg-cards);
   }
 
   .projeto2 {
-    width: 461px;
+    width: auto;
     height: 186px;
 
-    border: solid 2px red;
     border-radius: 20px;
 
     grid-area: projeto2;
+
+    background-color: var(--bg-cards);
   }
 
   .tituloPostRecente {
-    width: 952px;
+    width: auto;
     height: 86px;
+
+    box-sizing: border-box;
     
-    border: solid 2px red;
+    margin-bottom: 3%;
+
     border-radius: 20px;
 
     grid-area: tituloPostRecente;
 
-    margin-bottom: 3%;
+    background-color: var(--bg-cards);
   }
 
+  .tituloPostRecente h2 {
+    margin: 0px;
+    padding: 4.4vh;
+  }
+  
   .post {
-    width: 952px;
+    width: auto;
     height: 201px;
 
-    border: solid 2px red;
     border-radius: 20px;
 
     grid-area: post;
+
+    background-color: var(--bg-cards);
   }
