@@ -47,6 +47,18 @@
     grid-area: profile;
 
     background-color: var(--bg-cards);
+
+    box-sizing: border-box;
+  }
+
+  .profile img {
+    height: 100px;
+    width: 100px;
+
+    border-radius: 100%;
+    border: solid 2px green;
+
+    
   }
 
   .profile h2 {
@@ -118,6 +130,8 @@
     width: 860px;
     height: 86px;
 
+    box-sizing: content-box;
+
     border-radius: 20px;
 
     grid-area: meusProjetos;
@@ -127,7 +141,20 @@
 
   .meusProjetos h2 {
     margin: 0px;
-    padding: 4.4vh
+    padding-left: 2%;
+    
+    top: 10%;
+
+    position: absolute;
+  }
+
+  .meusProjetos p {
+    margin: 0px;
+
+    top: 10.5%;
+    right: 8%;
+    
+    position: absolute;
   }
 
   .projetosFlex {
