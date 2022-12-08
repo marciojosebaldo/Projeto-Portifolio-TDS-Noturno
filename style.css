@@ -53,27 +53,47 @@
 
   .profile img {
     height: 100px;
-    width: 100px;
+    width: 90px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 13%;
 
     border-radius: 100%;
     border: solid 2px green;
-
-    
   }
 
   .profile h2 {
     text-align: center;
+    margin-top: 10%;
+  }
+
+  .profile p {
+    text-align: center;
+    margin-top: -5%;
   }
 
   .links{
     width: 348px;
-    height: 348px;
+    height: auto;
 
     border-radius: 20px;
 
     grid-area: links;
 
     background-color: var(--bg-cards);
+    
+    box-sizing: border-box;
+
+    position: absolute;
+  }
+
+  .linksFormatacao {
+    margin: 10%;
+    padding: 0px;
+    border: 0px;
   }
 
   .tecnologias {
