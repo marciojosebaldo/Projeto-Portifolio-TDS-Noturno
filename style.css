@@ -11,6 +11,8 @@
     color: var(--text-color);
     background-color: var(--body-bg-color);
     
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
   }
 
@@ -28,7 +30,7 @@
     display: grid;
 
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 1fr 30% 1fr 1fr;
+    grid-template-rows: 20% 30% 30% 1fr 1fr;
     grid-template-areas: "profile"
                          "links"
                          "tecnologias"
@@ -53,7 +55,7 @@
 
   .profile img {
     height: 100px;
-    width: 90px;
+    width: 70px;
 
     display: block;
     margin-left: auto;
@@ -75,7 +77,7 @@
     margin-top: -5%;
   }
 
-  .links{
+  .links {
     width: 348px;
     height: auto;
 
@@ -87,18 +89,30 @@
     
     box-sizing: border-box;
 
+    padding-bottom: 4%;
+  }
+
+  .linksImagens {
+    position: relative;
+
+    margin-left: 7%;
+    margin-top: 7%;
+  }
+
+  .links img {
     position: absolute;
   }
 
-  .linksFormatacao {
-    margin: 10%;
-    padding: 0px;
-    border: 0px;
+  .links p {
+    margin-left: 13%;
+    margin-top: 5%;
   }
 
   .tecnologias {
     width: 348px;
-    height: 208px;
+    height: auto;
+
+    box-sizing: border-box;
 
     border-radius: 20px;
 
@@ -107,15 +121,75 @@
     background-color: var(--bg-cards);
   }
 
+  .tecnologiasGrupo {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+
+    justify-content:space-around;
+
+    margin-bottom: 5%;
+  }
+
+  .tecnologias h2 {
+    margin-left: 5%;
+    margin-top: 7%;
+  }
+
+  .tecnologias p {
+    text-align: center;
+    font-size: 10px;
+    color: black;
+
+    width: 86px;
+    height: 24px;
+    padding: 1%;
+    margin: 2%;
+    border-radius: 50%;
+
+    background-color: var(--bg-techs);
+  }
+
   .experiencias {
     width: 348px;
-    height: 349px;
+    height: auto;
 
     border-radius: 20px;
 
     grid-area: experiencias;
 
     background-color: var(--bg-cards);
+
+    text-align: center;
+  }
+
+  .experiencias h2 {
+    margin-left: 5%;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    text-align: left;
+  }
+
+  .experienciasEmpresa {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .experienciasPeriodo {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 11%;
+  }
+
+  .experienciasDescricao {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 11%;
+    margin-bottom: 10%;
   }
 
   .educacao {
@@ -127,6 +201,15 @@
     grid-area: educacao;
 
     background-color: var(--bg-cards);
+  }
+
+  .educacao h2 {
+  margin-left: 5%;
+  margin-top: 7%;
+  }
+
+  .educacaoInstituicao {
+    
   }
 
   main {
