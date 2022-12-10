@@ -7,12 +7,10 @@
 
   body {
     font-family: 'Merriweather Sans', sans-serif;
-
     color: var(--text-color);
     background-color: var(--body-bg-color);
-    
-    margin: 0;
-    padding: 0;
+    margin: 0; /*Cross-browser*/
+    padding: 0; /*Cross-browser*/
     box-sizing: border-box;
   }
 
@@ -24,12 +22,10 @@
   aside {
     margin: 2%;
     margin-bottom: 11%;
-
     box-sizing: border-box;
-
     display: grid;
 
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-rows: 20% 30% 30% 1fr 1fr;
     grid-template-areas: "profile"
                          "links"
@@ -41,28 +37,21 @@
                         } 
 
   .profile {
-    width: 348px;
-    height: 292px;
-
+    width: auto;
+    height: auto;
     border-radius: 20px;
-
     grid-area: profile;
-
     background-color: var(--bg-cards);
-
     box-sizing: border-box;
   }
 
   .profile img {
     height: 100px;
-    width: 70px;
-
+    width: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-
     margin-top: 13%;
-
     border-radius: 100%;
     border: solid 2px green;
   }
@@ -78,23 +67,17 @@
   }
 
   .links {
-    width: 348px;
+    width: auto;
     height: auto;
-
     border-radius: 20px;
-
     grid-area: links;
-
     background-color: var(--bg-cards);
-    
     box-sizing: border-box;
-
     padding-bottom: 4%;
   }
 
   .linksImagens {
     position: relative;
-
     margin-left: 7%;
     margin-top: 7%;
   }
@@ -109,26 +92,19 @@
   }
 
   .tecnologias {
-    width: 348px;
+    width: 300px;
     height: auto;
-
     box-sizing: border-box;
-
     border-radius: 20px;
-
     grid-area: tecnologias;
-
     background-color: var(--bg-cards);
   }
 
   .tecnologiasGrupo {
     display: flex;
     flex-wrap: wrap;
-
     flex-direction: row;
-
     justify-content:space-around;
-
     margin-bottom: 5%;
   }
 
@@ -141,26 +117,20 @@
     text-align: center;
     font-size: 10px;
     color: black;
-
     width: 86px;
     height: 24px;
-    padding: 1%;
+    padding-top: 3%;
     margin: 2%;
     border-radius: 50%;
-
     background-color: var(--bg-techs);
   }
 
   .experiencias {
-    width: 348px;
+    width: auto;
     height: auto;
-
     border-radius: 20px;
-
     grid-area: experiencias;
-
     background-color: var(--bg-cards);
-
     text-align: center;
   }
 
@@ -193,14 +163,12 @@
   }
 
   .educacao {
-    width: 348px;
-    height: 349px;
-
+    width: auto;
+    height: auto;
     border-radius: 20px;
-
     grid-area: educacao;
-
     background-color: var(--bg-cards);
+    text-align: left;
   }
 
   .educacao h2 {
@@ -209,14 +177,29 @@
   }
 
   .educacaoInstituicao {
-    
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .educacaoPeriodo {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 11%;
+  }
+
+  .educacaoTipo {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 11%;
+    margin-bottom: 12%;
   }
 
   main {
     margin: 0.7%;
-    
     box-sizing: border-box;
-
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 4fr;
     grid-template-areas: "meusProjetos meusProjetos"
@@ -229,46 +212,32 @@
   .meusProjetos {
     margin-top: 2%;
     margin-bottom: 3%;
-    
-    width: 860px;
+    width: auto;
     height: 86px;
-
-    box-sizing: content-box;
-
+    box-sizing: border-box;
     border-radius: 20px;
-
     grid-area: meusProjetos;
-
     background-color: var(--bg-cards);
+    display: flex;
+    justify-content: space-between;
   }
 
   .meusProjetos h2 {
-    margin: 0px;
+    padding-top: 1%;
     padding-left: 2%;
-    
-    top: 10%;
-
-    position: absolute;
   }
 
   .meusProjetos p {
-    margin: 0px;
-
-    top: 10.5%;
-    right: 8%;
-    
-    position: absolute;
+    padding-top: 2%;
+    padding-right: 2%;
   }
 
   .projetosFlex {
     box-sizing: border-box;
-    
     display: grid;
-    
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "projeto1 projeto2";
-
     gap: 3%;
     margin-bottom: 3%;
   }
@@ -276,37 +245,159 @@
   .projeto1 {
     width: auto;
     height: 186px;
-
     border-radius: 20px;
-
     grid-area: projeto1;
-
     background-color: var(--bg-cards);
+    box-sizing: border-box;
   }
+
+  .orgIconDesc {
+    display: flex;
+    padding-left: 5%;
+    padding-top: 1%;
+  }
+
+  .projeto1Icone {
+    padding-right: 5%;
+  }
+
+  .projeto1Descricao {
+    text-align: justify;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .orgIconInf {
+    display: flex;
+    padding-left: 5%;
+  }
+
+  .projeto1Icone2 {
+    padding-right: 2%;
+  }
+
+  .qtdeIcone2 {
+    padding-right: 7%;
+  }
+
+  .projeto1Icone3 {
+    padding-right: 2%;
+  }
+
+  .qtdeIcone3 {
+    padding-right: 7%;
+  }
+
+  .orgInferiorGeral {
+    display: flex;
+    justify-content: space-between
+  }
+
+  .orgPeCirculo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4%;
+    margin-right: 4%;
+    box-sizing: border-box;
+  }
+
+  .circulo {
+    width: 15px;
+    height: 15px;
+    shape-outside: circle();
+    clip-path: circle();
+    background-color: lightblue;
+    padding-top: 40%;
+    margin-right: 4%;
+  }
+
+ 
+.projeto2 {
+  width: auto;
+  height: 186px;
+  border-radius: 20px;
+  grid-area: projeto1;
+  background-color: var(--bg-cards);
+  box-sizing: border-box;
+}
+
+.orgIconDesc {
+  display: flex;
+
+  padding-left: 5%;
+  padding-top: 1%;
+}
+
+.projeto2Icone {
+  padding-right: 5%;
+}
+
+.projeto2Descricao {
+  text-align: justify;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.orgIconInf {
+  display: flex;
+
+  padding-left: 5%;
+}
+
+.projeto2Icone2 {
+  padding-right: 2%;
+}
+
+.qtdeIcone2 {
+  padding-right: 7%;
+}
+
+.projeto2Icone3 {
+  padding-right: 2%;
+}
+
+.qtdeIcone3 {
+  padding-right: 7%;
+}
+
+.orgInferiorGeral {
+  display: flex;
+  justify-content: space-between
+}
+
+.orgPeCirculo {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4%;
+  margin-right: 4%;
+  box-sizing: border-box;
+}
+
+.circulo {
+  width: 15px;
+  height: 15px;
+  shape-outside: circle();
+  clip-path: circle();
+  background-color: lightblue;
+  padding-top: 40%;
+  margin-right: 4%;
+}
 
   .projeto2 {
     width: auto;
     height: 186px;
-
     border-radius: 20px;
-
     grid-area: projeto2;
-
     background-color: var(--bg-cards);
   }
 
   .tituloPostRecente {
     width: auto;
     height: 86px;
-
     box-sizing: border-box;
-    
     margin-bottom: 3%;
-
     border-radius: 20px;
-
     grid-area: tituloPostRecente;
-
     background-color: var(--bg-cards);
   }
 
