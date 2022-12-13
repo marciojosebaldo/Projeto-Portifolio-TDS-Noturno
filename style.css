@@ -23,8 +23,9 @@
     margin: 2%;
     margin-bottom: 11%;
     box-sizing: border-box;
+    max-width: 350px;
+    
     display: grid;
-
     grid-template-columns: auto;
     grid-template-rows: 20% 30% 30% 1fr 1fr;
     grid-template-areas: "profile"
@@ -43,6 +44,10 @@
     grid-area: profile;
     background-color: var(--bg-cards);
     box-sizing: border-box;
+    max-width: 350px;
+    max-height: 244px;
+    min-width: 300px;
+    min-height: 220px;
   }
 
   .profile img {
@@ -51,7 +56,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 13%;
+    margin-top: 5%;
     border-radius: 100%;
     border: solid 2px green;
   }
@@ -64,6 +69,7 @@
   .profile p {
     text-align: center;
     margin-top: -5%;
+    margin-bottom: 10%;
   }
 
   .links {
@@ -74,6 +80,10 @@
     background-color: var(--bg-cards);
     box-sizing: border-box;
     padding-bottom: 4%;
+    max-width: 450px;
+    max-height: 392px;
+    min-width: 350px;
+    min-height: 292px;
   }
 
   .linksImagens {
@@ -92,12 +102,16 @@
   }
 
   .tecnologias {
-    width: 300px;
+    width: 350px;
     height: auto;
     box-sizing: border-box;
     border-radius: 20px;
     grid-area: tecnologias;
     background-color: var(--bg-cards);
+    max-width: 350px;
+    max-height: 237px;
+    min-width: 350px;
+    min-height: 237px;
   }
 
   .tecnologiasGrupo {
@@ -132,6 +146,10 @@
     grid-area: experiencias;
     background-color: var(--bg-cards);
     text-align: center;
+    min-width: 350px;
+    min-height: 431px;
+    max-width: 350px;
+    max-height: 431px;
   }
 
   .experiencias h2 {
@@ -169,6 +187,10 @@
     grid-area: educacao;
     background-color: var(--bg-cards);
     text-align: left;
+    min-width: 350px;
+    min-height: 431px;
+    max-width: 350px;
+    max-height: 431px;
   }
 
   .educacao h2 {
@@ -220,6 +242,10 @@
     background-color: var(--bg-cards);
     display: flex;
     justify-content: space-between;
+    min-width: 726px;
+    min-height: 86px;
+    max-width: 986px;
+    max-height: 86px;
   }
 
   .meusProjetos h2 {
@@ -249,6 +275,10 @@
     grid-area: projeto1;
     background-color: var(--bg-cards);
     box-sizing: border-box;
+    min-width: 352px;
+    min-height: 186px;
+    max-width: 493px;
+    max-height: 186px;
   }
 
   .orgIconDesc {
@@ -316,9 +346,13 @@
   width: auto;
   height: 186px;
   border-radius: 20px;
-  grid-area: projeto1;
+  grid-area: projeto2;
   background-color: var(--bg-cards);
   box-sizing: border-box;
+  min-width: 352px;
+  min-height: 186px;
+  max-width: 493px;
+  max-height: 186px;
 }
 
 .orgIconDesc {
@@ -395,24 +429,89 @@
     width: auto;
     height: 86px;
     box-sizing: border-box;
-    margin-bottom: 3%;
     border-radius: 20px;
     grid-area: tituloPostRecente;
     background-color: var(--bg-cards);
+    position: relative;
   }
 
   .tituloPostRecente h2 {
-    margin: 0px;
-    padding: 4.4vh;
+   position: absolute;
+   left: 2%;  
+   top: 9.5%;
   }
   
   .post {
     width: auto;
-    height: 201px;
-
+    height: auto;
     border-radius: 20px;
-
     grid-area: post;
-
     background-color: var(--bg-cards);
+    box-sizing: border-box;
+    min-width: 726px;
+    min-height: 173px;
+    max-width: 1018px;
+    max-height: 173px;
   }
+
+    .post img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    }
+
+    .postPai {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .postFilho1 {
+      padding-left: 3%;
+    }
+
+    .postFilho2 {
+      padding-left: 3%;
+    }
+
+    .tituloPost {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22.63px;
+    }
+
+    .desTituloPost {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17.6px;
+    }
+
+    .subTitulo {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20.11px;
+    }
+
+    .postHashtags {
+      display: flex;
+      justify-content: space-between;
+      font-Weight: 400;
+      font-size: 14px;
+      line-height: 17.6px;
+    }
+
+    /*Código para definir comportamento do código quando a tela do dispositivo tiver largura máxima de 600 pixels
+
+    @media (max-width: 600px) {
+      body {
+        display: flex;
+        overflow: scroll;      
+      }
+
+      .container {
+        display: flex;
+        overflow: scroll;
+      }
+    }
+
+    */
